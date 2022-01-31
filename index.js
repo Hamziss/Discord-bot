@@ -16,7 +16,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content == "hi") {
-        message.reply("hi friendo")
+        message.reply("bl3")
     }
 })
 client.login(TOKEN)
