@@ -18,5 +18,25 @@ client.on("messageCreate", (message) => {
     if (message.content == "hi") {
         message.reply("bl3")
     }
+    if (message.content == "zebi kbir") {
+        message.reply("As a bot, i confirm this fact")
+    }
 })
+
+//discord.js and client declaration
+const { joinVoiceChannel } = require('@discordjs/voice');
+client.on('messageCreate', message => {
+    if (message.content === '!join') {
+        joinVoiceChannel({
+            channelId: message.member.voice.channel.id,
+            guildId: message.guild.id,
+            adapterCreator: message.guild.voiceAdapterCreator
+        })
+    }
+})
+
+
+
+
+
 client.login(TOKEN)
