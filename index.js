@@ -23,12 +23,12 @@ client.on('messageCreate', message => {
     ]
     var idPresentArray = [];
     var idarray = ["444594022644711424", "530849194961797140"]
+    
+    
     if (message.content === '!rachid cmd') {
         message.channel.send(`**!rachid present**: gives you the list of members that are with you\n**!rachid absent**: gives you list of members that aren't here\n**!rachid dm**: send dms to absent people`);
-    }
-    if (message.author.bot) {
-        return;
-    }
+    }    
+    
     if (message.content.includes('!rachid')) {
 
         if (!message.member.voice.channel) {
@@ -51,11 +51,13 @@ client.on('messageCreate', message => {
             if (message.content === '!rachid dm') {
                 idabsent.forEach(element =>
                     client.users.fetch(element).then((user) => {
-                        user.send('You missed a meeting today hope you doing fine');
+                    //here we can put a custom message that will be sent in dms
+                        user.send('You missed a meeting today hope you are doing fine');
                     })
                 )
-
-                if (idabsent.length === 0) { message.channel.send("all members are here") } else { message.channel.send(`✅ Dms sent ✅`); }
+                if (idabsent.length === 0) { 
+                    message.channel.send("ABSENT LIST IS EMPTY") 
+                } else { message.channel.send(`✅ Dms sent ✅`); }
             }
         }
     }
