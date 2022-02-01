@@ -1,7 +1,5 @@
 const { Client, Intents } = require('discord.js');
 var prefix = "!"
-const { joinVoiceChannel } = require('@discordjs/voice');
-const { getVoiceConnection } = require('@discordjs/voice');
 const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.1HuISO44eIht5p6_ehR7vGAeVwE"
 
 const client = new Client({
@@ -17,62 +15,51 @@ client.on("ready", async() => {
     console.log(`Logged in as ${client.user.tag}`)
 })
 
-client.on('messageCreate', async(message) => {
-    if (message.content.toLocaleLowerCase() === prefix + 'rachid arwah') { //Here's how to join a voice channel 
-
-        const connection = joinVoiceChannel({
-            channelId: message.member.voice.channel.id,
-            guildId: message.member.guild.id,
-            adapterCreator: message.channel.guild.voiceAdapterCreator
-        })
-
-        console.log('Connected to voice!');
-    }
-
-    //Here's how to leave from voice channel
-    if (message.content.toLocaleLowerCase() === prefix + 'rachid nikni') {
-        message.channel.send("ani jay 3omri")
-    }
-
-    if (message.content.toLocaleLowerCase() === prefix + 'rachid 9wd') {
-        const connection = getVoiceConnection(message.guild.id)
-
-        if (!connection) return message.channel.send("I'm not in a voice channel!")
-
-        connection.destroy()
-        console.log('Disconnected from voice!');
-    }
-})
-
-client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to the voiceStateUpdate event
-    if (newVoiceState.channel) { // The member connected to a channel.
-        if (newVoiceState.channelId === "893454593479016478") {
-            console.log(`${newVoiceState.member.user.tag} connected to ${newVoiceState.channel.name}.`);
-        }
-    }
-});
-
 
 client.on('messageCreate', message => {
+    var PresentArray = [];
+    var Fullarray = ["Hamzes#7678", "Safiro#0749", "Swissou#3825", "JupiterRoue45#3205",
+        "Pa Pou#5397", "ryad.derr213#0073", "Bybus#0806"
+    ]
+    var idPresentArray = [];
+    var idarray = ["444594022644711424", "530849194961797140"]
+    if (message.content === '!rachid cmd') {
+        message.channel.send(`**!rachid present**: gives you the list of members that are with you\n**!rachid absent**: gives you list of members that aren't here\n**!rachid dm**: send dms to absent people`);
+    }
     if (message.author.bot) {
         return;
     }
-    if (message.content === '!rachid list') {
+    if (message.content.includes('!rachid')) {
 
-        var myArray = [];
-        var array = ["Hamzes#7678", "Safiro#0749", "ryad.derr213#0073", "Bybus#0806"]
-        message.member.voice.channel.members.each(member => {
-            myArray.push(`${member.user.tag}`)
-        });
+        if (!message.member.voice.channel) {
+            message.channel.send(`Your aren't in a channel, You have to be in channel to see who else is here.`);
+        } else {
+
+            message.member.voice.channel.members.each(member => {
+                PresentArray.push(`${member.user.tag}`)
+            });
+            message.member.voice.channel.members.each(member => {
+                idPresentArray.push(`${member.user.id}`)
+            });
+            var absent = Fullarray.filter(x => !PresentArray.includes(x));
+            var idabsent = idarray.filter(x => !idPresentArray.includes(x));
+
+            if (message.content === '!rachid present') { message.channel.send(`📝**PRESENT MEMBERS**📝\n${PresentArray.join("\n") || "No members found"}`); }
+            if (message.content === '!rachid absent') { message.channel.send(`📝**ABSENT MEMBERS**📝\n${absent.join("\n") || "No members found"}`); }
 
 
-        console.log(array.filter(x => !myArray.includes(x)));
+            if (message.content === '!rachid dm') {
+                idabsent.forEach(element =>
+                    client.users.fetch(element).then((user) => {
+                        user.send('You missed a meeting today hope you doing fine');
+                    })
+                )
 
-
-
-        message.channel.send(`**MEMBERS**\n${myArray.join("\n") || "No members found"}`);
-        message.channel.send(`**N9oucha li majawsh**\n${array.filter(x => !myArray.includes(x)).join("\n") || "No members found"}`);
+                if (idabsent.length === 0) { message.channel.send("all members are here") } else { message.channel.send(`✅ Dms sent ✅`); }
+            }
+        }
     }
+
 });
 
 
