@@ -4,7 +4,7 @@ const creds = require('./secret.json');
 
 
 
-const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.brriyYc00BxKNDRN09Fp_Imo-XE"
+const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.XwEV8EAa2bkXec6qoHTW_XBfQTE"
 
 const client = new Client({
     intents: [
@@ -30,8 +30,7 @@ async function accesSpreadsheet() {
 
     var Fullarray = [];
     var idarray = [];
-    var PresentArray = [];
-    var idPresentArray = [];
+
 
 
     // get rows data and transform it into arrays to make it more easier to use
@@ -56,6 +55,8 @@ async function accesSpreadsheet() {
             if (!message.member.voice.channel) {
                 message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
             } else {
+                var PresentArray = [];
+                var idPresentArray = [];
                 //creating the array of present and absent members
                 message.member.voice.channel.members.each(member => {
                     PresentArray.push(`${member.user.tag}`)
