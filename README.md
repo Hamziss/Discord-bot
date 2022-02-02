@@ -19,4 +19,7 @@
 1. Install dependencies :
   ```sh
    npm install discord.js google-spreadsheets
-   ```            
+   ```  
+2. Create a Bot in discord developer portal
+
+3.copy the token :
