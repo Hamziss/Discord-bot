@@ -25,4 +25,7 @@
 ```sh
 const TOKEN = "here"
 ``` 
-
+4. Run it in a node environnemnt
+```sh
+node index.js
+```
