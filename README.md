@@ -7,7 +7,9 @@
 
 ## he uses data from a google sheet doc of all members:
 
-  here is the url if you want: https://docs.google.com/spreadsheets/d/1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8/edit?usp=sharing 
+  <div align="center">
+  <img alt="Logo" src="https://github.com/Hamziss/MCbot/blob/master/chrome_NJfMuN96QG.png" width="100" />
+</div>
 
 
 ## fonction:
