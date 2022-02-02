@@ -7,4 +7,4 @@
 
 ## he uses data from a google sheet doc of all members:
 
-  here is the url if you want: https://docs.google.com/spreadsheets/d/1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8/edit#gid=1147712466
+  here is the url if you want: https://docs.google.com/spreadsheets/d/1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8/edit?usp=sharing
