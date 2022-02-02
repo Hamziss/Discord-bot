@@ -3,7 +3,8 @@ const { Client, Intents } = require('discord.js');
 const creds = require('./secret.json');
 
 
-const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.1HuISO44eIht5p6_ehR7vGAeVwE"
+
+const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.dVI8qEhNM3Brale9TUSG9O2YVjk"
 
 const client = new Client({
     intents: [
@@ -18,7 +19,6 @@ client.on("ready", async() => {
     console.log(`Logged in as ${client.user.tag}`)
 
 })
-
 
 async function accesSpreadsheet() {
     const doc = new GoogleSpreadsheet('1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8');
@@ -56,7 +56,7 @@ async function accesSpreadsheet() {
             if (!message.member.voice.channel) {
                 message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
             } else {
-
+                //creating the array of present and absent members
                 message.member.voice.channel.members.each(member => {
                     PresentArray.push(`${member.user.tag}`)
                 });
@@ -66,8 +66,12 @@ async function accesSpreadsheet() {
                 var absent = Fullarray.filter(x => !PresentArray.includes(x));
                 var idabsent = idarray.filter(x => !idPresentArray.includes(x));
 
-                if (message.content === '!rachid present') { message.channel.send(`📝**PRESENT MEMBERS**📝\n${PresentArray.join("\n") || "No members found"}`); }
-                if (message.content === '!rachid absent') { message.channel.send(`📝**ABSENT MEMBERS**📝\n${absent.join("\n") || "No members found"}`); }
+                if (message.content === '!rachid present') {
+                    message.channel.send(`📝**PRESENT MEMBERS**📝\n${PresentArray.join("\n") || "No members found"}`);
+                }
+                if (message.content === '!rachid absent') {
+                    message.channel.send(`📝**ABSENT MEMBERS**📝\n${absent.join("\n") || "No members found"}`);
+                }
 
                 //cmd to send dms
                 if (message.content === '!rachid dm') {
@@ -87,4 +91,4 @@ async function accesSpreadsheet() {
 }
 accesSpreadsheet();
 
-client.login(TOKEN)
+client.login(TOKEN);
