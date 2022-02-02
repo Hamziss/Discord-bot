@@ -2,7 +2,6 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 const creds = require('./secret.json');
 
-var prefix = "!"
 
 const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.1HuISO44eIht5p6_ehR7vGAeVwE"
 
@@ -19,6 +18,7 @@ client.on("ready", async() => {
     console.log(`Logged in as ${client.user.tag}`)
 
 })
+
 
 async function accesSpreadsheet() {
     const doc = new GoogleSpreadsheet('1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8');
@@ -84,12 +84,7 @@ async function accesSpreadsheet() {
 
     });
 
-    console.log(idarray);
-
-
 }
-
-
-
+accesSpreadsheet();
 
 client.login(TOKEN)
