@@ -8,7 +8,7 @@
 ## he uses data from a google sheet doc of all members:
 
   <div align="center">
-  <img alt="Logo" src="https://github.com/Hamziss/MCbot/blob/master/chrome_NJfMuN96QG.png" width="100" />
+  <img alt="Logo" src="https://github.com/Hamziss/MCbot/blob/master/chrome_NJfMuN96QG.png" />
 </div>
 
 
