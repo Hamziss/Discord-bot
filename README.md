@@ -5,7 +5,7 @@
      show the absent members of a vocal channel: !rachid absent
      send a customable dm to absent members: !rachid dm 
 
-## he uses data from a google sheet doc of all members:
+## He uses data from a google sheet doc of all members:
 
   <div align="center">
   <img src="https://github.com/Hamziss/MCbot/blob/master/chrome_sbtT1gejcC.png" />
