@@ -31,3 +31,4 @@ const TOKEN = "here"
 ```sh
 node index.js
 ```
+5. Add him to your server and start using it
