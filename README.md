@@ -1,47 +1,8 @@
+<h3 align="center">A passionate frontend developer from India</h3>
 
-# A discord bot "Rachid La Garde" that :
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
 
-     show the present members of a a vocal channel: !rachid present
-     show the absent members of a vocal channel: !rachid absent
-     send a customable dm to absent members: !rachid dm 
-
-## He uses data from a google sheet doc of all members:
-
-  <div align="center">
-  <img src="https://i.ibb.co/jr0ttcF/chrome-sbt-T1gejc-C.png" />
-</div>
-```diff
-- This is a red colored line
-+ This is a green colored line
-@@ This is a purple colored line @@
-```
-
-## fonction:
- 
- he will be usefull in large meeting to check absent member that must be here or send them dm .
- 
- ## 🛠 Installation & Set Up 🛠
- 
-1. Install dependencies :
-  ```sh
-   npm install discord.js google-spreadsheets dotenv
-   ```  
-2. Create a Bot in discord developer portal
-3. Create a .env file and copy and fill those:
-```sh
-token= bot token
-GOOGLE_SHEETS_DOCUMENT_ID= yoursheetdocid
-GOOGLE_SERVICE_ACCOUNT_EMAIL=yourserviceaccountmail
-sheet_id=yoursheetid
-GOOGLE_PRIVATE_KEY= yourprivatekey
-```
-4. Run it in a node environnement or host it in horuku
-```sh
-node index.js
-```
-5. Add him to your server and start using it:
-copy your client id in the link:
-
-https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
-
-
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
