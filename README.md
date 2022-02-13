@@ -18,7 +18,6 @@
  
  ## 🛠 Installation & Set Up 🛠
  
-<<<<<<< HEAD
 1. Install dependencies :
   ```sh
    npm install discord.js google-spreadsheets dotenv
@@ -41,7 +40,3 @@ copy your client id in the link:
 ```sh
 https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
 ```
-=======
-Add him to your discord server by this link:<br />
-https://discord.com/api/oauth2/authorize?client_id=937664360954859571&permissions=0&scope=bot%20applications.commands
->>>>>>> 250ef096387cb000825fe2fa08b5424fc752d288
