@@ -23,9 +23,9 @@
    npm install discord.js google-spreadsheets
    ```  
 2. Create a Bot in discord developer portal
-3. Copy your bot token in index.js given by discord :
+3. Copy your bot token in .env given by discord :
 ```sh
-const TOKEN = "here"
+TOKEN = here
 ``` 
 4. Run it in a node environnemnt
 ```sh
