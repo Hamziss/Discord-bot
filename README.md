@@ -43,7 +43,7 @@ node index.js
 ```
 5. Add him to your server and start using it:
 copy your client id in the link:
-```sh
+
 https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
-```
+
 
