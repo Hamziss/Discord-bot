@@ -10,7 +10,13 @@
   <div align="center">
   <img src="https://i.ibb.co/jr0ttcF/chrome-sbt-T1gejc-C.png" />
 </div>
-
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ## fonction:
  
@@ -40,3 +46,4 @@ copy your client id in the link:
 ```sh
 https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
 ```
+
