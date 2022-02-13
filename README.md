@@ -9,11 +9,7 @@
   <div align="center">
   <img src="https://i.ibb.co/jr0ttcF/chrome-sbt-T1gejc-C.png" />
 </div>
-```diff
-- This is a red colored line
-+ This is a green colored line
-@@ This is a purple colored line @@
-```
+
 
 ## fonction:
 
@@ -34,10 +30,10 @@ GOOGLE_SERVICE_ACCOUNT_EMAIL=yourserviceaccountmail
 sheet_id=yoursheetid
 GOOGLE_PRIVATE_KEY= yourprivatekey
 ```
-4. Add him to your server and start using it:
-copy your client id in the link:
+4. Add him to your server :
+copy your client id where i wrote "here":
 
-https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
+https://discord.com/api/oauth2/authorize?client_id=here&permissions=0&scope=bot%20applications.commands
 
 5. Run it in a node environnement or host it in horuku
 ```sh
