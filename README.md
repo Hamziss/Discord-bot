@@ -18,17 +18,5 @@
  
  ## 🛠 Installation & Set Up 🛠
  
-1. Install dependencies :
-  ```sh
-   npm install discord.js google-spreadsheets
-   ```  
-2. Create a Bot in discord developer portal
-3. Copy your bot token in .env given by discord :
-```sh
-TOKEN = here
-``` 
-4. Run it in a node environnemnt
-```sh
-node index.js
-```
-5. Add him to your server and start using it
+add him to your discord server by this link:
+https://discord.com/api/oauth2/authorize?client_id=937664360954859571&permissions=0&scope=bot%20applications.commands
