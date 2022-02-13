@@ -1,43 +1,43 @@
 [{
-        "question": "question 1",
+        "flag": "🇦🇱",
         "answer": "58"
     },
     {
-        "question": "question 2",
+        "flag": "🇳🇨",
         "anwer": "85"
     },
     {
-        "question": "question 3",
+        "flag": "🇳🇨",
         "anwer": "0"
     },
     {
-        "question": "question 4",
+        "flag": "🇧🇧",
         "anwer": "85"
     },
     {
-        "question": "question 5",
+        "flag": "🇧🇹",
         "anwer": "85"
     },
     {
-        "question": "question 6",
+        "flag": "🇧🇴",
         "anwer": "85"
     }, {
-        "question": "question 7",
+        "flag": "🇨🇴",
         "anwer": "85"
     }, {
-        "question": "question 8",
+        "flag": "🇨🇽",
         "anwer": "85"
     }, {
-        "question": "question 9",
+        "flag": "🇫🇮",
         "anwer": "85"
     }, {
-        "question": "question 10",
+        "flag": "🇭🇷",
         "anwer": "85"
     }, {
-        "question": "question 11",
+        "flag": "🇲🇬",
         "anwer": "85"
     }, {
-        "question": "question 12",
+        "flag": "🇰🇬",
         "anwer": "85"
     }
 ]

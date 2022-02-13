@@ -47,8 +47,8 @@ async function accesSpreadsheet() {
     //here i started working on the bot
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
-            message.channel.send(`${data[question_nbr].question }`)
-            message.channel.send(`what flag is this ? 🇦🇱`)
+            message.channel.send(`${data[question_nbr].flag}`)
+            message.channel.send(`what flag is this ?`)
 
             question_nbr = Math.floor(Math.random() * 11);
         }
