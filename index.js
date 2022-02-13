@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 const creds = require('./secret.json');
-
+require("dotenv").config
 
 const client = new Client({
     intents: [
@@ -89,4 +89,4 @@ async function accesSpreadsheet() {
 }
 accesSpreadsheet();
 
-client.login(creds.TOKEN);
+client.login(process.env.TOKEN);
