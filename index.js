@@ -49,7 +49,7 @@ async function accesSpreadsheet() {
         if (message.content === '!rachid quiz') {
             message.channel.send(`${data[question_nbr].flag}`)
             message.channel.send(`what flag is this ?
-        a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c}\t\t d-${data[question_nbr].d}`)
+a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c}\t\t d-${data[question_nbr].d}`)
             question_nbr = Math.floor(Math.random() * 3);
         }
 
