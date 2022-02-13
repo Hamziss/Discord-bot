@@ -1,6 +1,5 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
-
 require("dotenv").config();
 
 const client = new Client({
