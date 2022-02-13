@@ -48,6 +48,7 @@ async function accesSpreadsheet() {
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
             message.channel.send(data[question_nbr].question);
+            question_nbr = Math.floor(Math.random() * 2);
         }
 
         //cmd to resume all commands
@@ -55,43 +56,43 @@ async function accesSpreadsheet() {
             message.channel.send(`**!rachid present**: gives you the list of members that are with you\n**!rachid absent**: gives you list of members that aren't here\n**!rachid dm**: send dms to absent people`);
         }
 
+        if (message.content.includes('!rachid')) {
 
+            if (!message.member.voice.channel) {
+                message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
+            } else {
+                var PresentArray = [];
+                var idPresentArray = [];
+                //creating the array of present and absent members
+                message.member.voice.channel.members.each(member => {
+                    PresentArray.push(`${member.user.tag}`)
+                });
+                message.member.voice.channel.members.each(member => {
+                    idPresentArray.push(`${member.user.id}`)
+                });
+                var absent = Fullarray.filter(x => !PresentArray.includes(x));
+                var idabsent = idarray.filter(x => !idPresentArray.includes(x));
 
-        if (!message.member.voice.channel) {
-            message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
-        } else {
-            var PresentArray = [];
-            var idPresentArray = [];
-            //creating the array of present and absent members
-            message.member.voice.channel.members.each(member => {
-                PresentArray.push(`${member.user.tag}`)
-            });
-            message.member.voice.channel.members.each(member => {
-                idPresentArray.push(`${member.user.id}`)
-            });
-            var absent = Fullarray.filter(x => !PresentArray.includes(x));
-            var idabsent = idarray.filter(x => !idPresentArray.includes(x));
+                if (message.content === '!rachid present') {
+                    message.channel.send(`📝**PRESENT MEMBERS**📝\n${PresentArray.join("\n") || "No members found"}`);
+                }
+                if (message.content === '!rachid absent') {
+                    message.channel.send(`📝**ABSENT MEMBERS**📝\n${absent.join("\n") || "No members found"}`);
+                }
 
-            if (message.content === '!rachid present') {
-                message.channel.send(`📝**PRESENT MEMBERS**📝\n${PresentArray.join("\n") || "No members found"}`);
+                //cmd to send dms
+                if (message.content === '!rachid dm') {
+                    idabsent.forEach(element =>
+                        client.users.fetch(element).then((user) => {
+                            user.send('💖 You missed a meeting today hope you doing fine 💖');
+                        })
+                    )
+
+                    if (idabsent.length === 0) { message.channel.send("all members are here") } else { message.channel.send(`✅ Dms sent ✅`); }
+                }
             }
-            if (message.content === '!rachid absent') {
-                message.channel.send(`📝**ABSENT MEMBERS**📝\n${absent.join("\n") || "No members found"}`);
-            }
 
-            //cmd to send dms
-            if (message.content === '!rachid dm') {
-                idabsent.forEach(element =>
-                    client.users.fetch(element).then((user) => {
-                        user.send('💖 You missed a meeting today hope you doing fine 💖');
-                    })
-                )
-
-                if (idabsent.length === 0) { message.channel.send("all members are here") } else { message.channel.send(`✅ Dms sent ✅`); }
-            }
         }
-
-
 
     });
 
