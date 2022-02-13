@@ -2,7 +2,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 require("dotenv").config();
 const data = require('./data.json');
-const question_nbr = Math.floor(Math.random() * 2);
+var question_nbr = Math.floor(Math.random() * 2);
 
 
 const client = new Client({
@@ -48,7 +48,7 @@ async function accesSpreadsheet() {
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
             message.channel.send(data[question_nbr].question);
-
+            question_nbr = Math.floor(Math.random() * 2);
         }
 
         //cmd to resume all commands
