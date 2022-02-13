@@ -48,7 +48,7 @@ async function accesSpreadsheet() {
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
             message.channel.send(data[question_nbr].question);
-            question_nbr = Math.floor(Math.random() * 8);
+            question_nbr = Math.floor(Math.random() * 10);
         }
 
         //cmd to resume all commands
