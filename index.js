@@ -48,7 +48,6 @@ async function accesSpreadsheet() {
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
             message.channel.send(data[question_nbr].question);
-            const question_nbr = Math.floor(Math.random() * 2);
         }
 
         //cmd to resume all commands
@@ -59,7 +58,7 @@ async function accesSpreadsheet() {
         if (message.content.includes('!rachid')) {
 
             if (!message.member.voice.channel) {
-                message.channel.send(`Your aren't in a channel, You have to be in channel execute 😄.`);
+                message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
             } else {
                 var PresentArray = [];
                 var idPresentArray = [];
