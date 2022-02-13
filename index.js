@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
-const creds = require('./secret.json');
-require("dotenv").config
+
+require("dotenv").config();
 
 const client = new Client({
     intents: [
@@ -19,11 +19,10 @@ client.on("ready", async() => {
 
 async function accesSpreadsheet() {
     const doc = new GoogleSpreadsheet('1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8');
-    await doc.useServiceAccountAuth({
+    await doc.useServiceAccountAuth(({
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n")
-    });
-
+    }));
     //loading data from google sheet doc
     await doc.loadInfo();
     const sheet = await doc.sheetsByIndex[0];
