@@ -11,7 +11,7 @@
 </div>
 
 
-## fonction:
+## Fonction:
 
  he will be usefull in large meeting to check absent member that must be here or send them dm .
 
