@@ -34,11 +34,12 @@ GOOGLE_SERVICE_ACCOUNT_EMAIL=yourserviceaccountmail
 sheet_id=yoursheetid
 GOOGLE_PRIVATE_KEY= yourprivatekey
 ```
-4. Run it in a node environnement or host it in horuku
-```sh
-node index.js
-```
-5. Add him to your server and start using it:
+4. Add him to your server and start using it:
 copy your client id in the link:
 
 https://discord.com/api/oauth2/authorize?client_id=<span style="color:red">here</span>&permissions=0&scope=bot%20applications.commands
+
+5. Run it in a node environnement or host it in horuku
+```sh
+node index.js
+```
