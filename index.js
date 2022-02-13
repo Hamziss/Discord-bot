@@ -59,7 +59,7 @@ async function accesSpreadsheet() {
         if (message.content.includes('!rachid')) {
 
             if (!message.member.voice.channel) {
-                message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
+                message.channel.send(`Your aren't in a channel, You have to be in channel execute 😄.`);
             } else {
                 var PresentArray = [];
                 var idPresentArray = [];
