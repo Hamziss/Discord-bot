@@ -1,34 +1,43 @@
 [{
-        "question": "combien ya de wilaya en algerie",
+        "question": "question 1",
         "answer": "58"
     },
     {
-        "question": "combien ya de pays en afrique",
+        "question": "question 2",
         "anwer": "85"
     },
     {
-        "question": "combien ya dhumains sur terre",
+        "question": "question 3",
         "anwer": "0"
-    },
-    {
-        "question": "pourquoi les oiseaux volent",
-        "anwer": "85"
     },
     {
         "question": "question 4",
         "anwer": "85"
     },
     {
-        "question": "question 9",
+        "question": "question 5",
         "anwer": "85"
-    }, {
+    },
+    {
         "question": "question 6",
         "anwer": "85"
     }, {
-        "question": "question 55",
+        "question": "question 7",
         "anwer": "85"
     }, {
-        "question": "question 75",
+        "question": "question 8",
+        "anwer": "85"
+    }, {
+        "question": "question 9",
+        "anwer": "85"
+    }, {
+        "question": "question 10",
+        "anwer": "85"
+    }, {
+        "question": "question 11",
+        "anwer": "85"
+    }, {
+        "question": "question 12",
         "anwer": "85"
     }
 ]
