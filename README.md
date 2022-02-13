@@ -18,5 +18,5 @@
  
  ## 🛠 Installation & Set Up 🛠
  
-add him to your discord server by this link:<br />
+Add him to your discord server by this link:<br />
 https://discord.com/api/oauth2/authorize?client_id=937664360954859571&permissions=0&scope=bot%20applications.commands
