@@ -2,7 +2,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 require("dotenv").config();
 const data = require('./data.json');
-var question_nbr = Math.floor(Math.random() * 11);
+var question_nbr = Math.floor(Math.random() * 3);
 
 
 const client = new Client({
@@ -47,10 +47,12 @@ async function accesSpreadsheet() {
     //here i started working on the bot
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
-            message.channel.send(`${data[question_nbr].flag}`)
-            message.channel.send(`what flag is this ?`)
 
-            question_nbr = Math.floor(Math.random() * 11);
+            message.channel.send(`${data[question_nbr].flag}\n 
+            what flag is this ?\n
+            a-${data[question_nbr].a} b-${data[question_nbr].b} c-${data[question_nbr].c} d-${data[question_nbr].d}`)
+
+            question_nbr = Math.floor(Math.random() * 3);
         }
 
         //cmd to resume all commands

@@ -1,43 +1,25 @@
 [{
-        "flag": "🇦🇱",
-        "answer": "58"
+        "flag": "🇩🇿",
+        "a": "finlande",
+        "b": "algerie",
+        "c": "france",
+        "d": "maroc",
+        "answer": "b"
     },
     {
-        "flag": "🇳🇨",
-        "anwer": "85"
+        "flag": "🇫🇷",
+        "a": "finlande",
+        "b": "algerie",
+        "c": "france",
+        "d": "maroc",
+        "answer": "c"
     },
     {
-        "flag": "🇳🇨",
-        "anwer": "0"
-    },
-    {
-        "flag": "🇧🇧",
-        "anwer": "85"
-    },
-    {
-        "flag": "🇧🇹",
-        "anwer": "85"
-    },
-    {
-        "flag": "🇧🇴",
-        "anwer": "85"
-    }, {
-        "flag": "🇨🇴",
-        "anwer": "85"
-    }, {
-        "flag": "🇨🇽",
-        "anwer": "85"
-    }, {
-        "flag": "🇫🇮",
-        "anwer": "85"
-    }, {
-        "flag": "🇭🇷",
-        "anwer": "85"
-    }, {
-        "flag": "🇲🇬",
-        "anwer": "85"
-    }, {
-        "flag": "🇰🇬",
-        "anwer": "85"
+        "flag": "🇲🇦",
+        "a": "finlande",
+        "b": "algerie",
+        "c": "france",
+        "d": "maroc",
+        "answer": "d"
     }
 ]
