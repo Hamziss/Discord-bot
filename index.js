@@ -51,7 +51,7 @@ async function accesSpreadsheet() {
             message.channel.send(`what flag is this ?
 a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c}\t\t d-${data[question_nbr].d}`)
 
-            if (message.content.includes(`${data[question_nbr].answer}`)) {
+            if (message.content === "b") {
                 message.channel.send(`you have the correct answer`)
             }
             question_nbr = Math.floor(Math.random() * 3);
