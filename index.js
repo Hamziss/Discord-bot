@@ -18,7 +18,7 @@ client.on("ready", async() => {
 })
 
 async function accesSpreadsheet() {
-    const doc = new GoogleSpreadsheet('1jvJ_d-Vdh00OGA9KMlpRikrZtnx2r4lu_ey4pvFdLs8');
+    const doc = new GoogleSpreadsheet(process.env.sheet_id);
     await doc.useServiceAccountAuth(({
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n")
