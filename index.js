@@ -1,6 +1,9 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 require("dotenv").config();
+const data = require('./data.json');
+const question_nbr = Math.floor(Math.random() * 2);
+
 
 const client = new Client({
     intents: [
@@ -48,7 +51,9 @@ async function accesSpreadsheet() {
         if (message.content === '!rachid cmd') {
             message.channel.send(`**!rachid present**: gives you the list of members that are with you\n**!rachid absent**: gives you list of members that aren't here\n**!rachid dm**: send dms to absent people`);
         }
-
+        if (message.content === '!rachid quiz') {
+            message.channel.send(data[question_nbr].question);
+        }
         if (message.content.includes('!rachid')) {
 
             if (!message.member.voice.channel) {
@@ -84,6 +89,7 @@ async function accesSpreadsheet() {
                     if (idabsent.length === 0) { message.channel.send("all members are here") } else { message.channel.send(`✅ Dms sent ✅`); }
                 }
             }
+
         }
 
     });
