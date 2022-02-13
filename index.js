@@ -48,7 +48,7 @@ async function accesSpreadsheet() {
     client.on('messageCreate', message => {
         if (message.content === '!rachid quiz') {
             message.channel.send(data[question_nbr].question);
-            question_nbr = Math.floor(Math.random() * 2);
+            question_nbr = Math.floor(Math.random() * 3);
         }
 
         //cmd to resume all commands
@@ -56,7 +56,7 @@ async function accesSpreadsheet() {
             message.channel.send(`**!rachid present**: gives you the list of members that are with you\n**!rachid absent**: gives you list of members that aren't here\n**!rachid dm**: send dms to absent people`);
         }
 
-        if (message.content.includes('!rachid')) {
+        if (message.content.includes('!rachid present' || '!rachid absent')) {
 
             if (!message.member.voice.channel) {
                 message.channel.send(`Your aren't in a channel, You have to be in channel execute this 😄.`);
