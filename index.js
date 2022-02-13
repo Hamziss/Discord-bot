@@ -4,7 +4,7 @@ const creds = require('./secret.json');
 
 
 
-const TOKEN = "OTM3NjY0MzYwOTU0ODU5NTcx.YffB_A.XwEV8EAa2bkXec6qoHTW_XBfQTE"
+const TOKEN = "your token"
 
 const client = new Client({
     intents: [
