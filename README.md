@@ -40,7 +40,7 @@ https://discord.com/api/oauth2/authorize?client_id=here&permissions=0&scope=bot%
 node index.js
 ```
 
-##Updates:
+## Updates:
 
 1.0.1 he can now do country quiz using data from json file
 
