@@ -30,8 +30,8 @@ GOOGLE_SERVICE_ACCOUNT_EMAIL=yourserviceaccountmail
 sheet_id=yoursheetid
 GOOGLE_PRIVATE_KEY= yourprivatekey
 ```
-4. Add him to your server :
-copy your client id where i wrote "here":
+4. Add him to your server by
+copying your client id where i wrote "here":
 
 https://discord.com/api/oauth2/authorize?client_id=here&permissions=0&scope=bot%20applications.commands
 
