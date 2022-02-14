@@ -21,5 +21,77 @@
         "c": "france",
         "d": "maroc",
         "answer": "d"
+    },
+    {
+        "flag": "🇲🇦",
+        "a": "finlande",
+        "b": "algerie",
+        "c": "france",
+        "d": "maroc",
+        "answer": "d"
+    },
+    {
+        "flag": "🇲🇦",
+        "a": "finlande",
+        "b": "algerie",
+        "c": "france",
+        "d": "maroc",
+        "answer": "d"
+    },
+    {
+        "flag": "🇲🇽",
+        "a": "iran",
+        "b": "Mexico",
+        "c": "Italy",
+        "d": "Hungary",
+        "answer": "b"
+    },
+    {
+        "flag": "🇲🇱",
+        "a": "Guinea",
+        "b": "Ghana",
+        "c": "Guinea-Bissau",
+        "d": "Mali",
+        "answer": "d"
+    },
+    {
+        "flag": "🇻🇳",
+        "a": "Vietnam",
+        "b": "Slovenia",
+        "c": "China",
+        "d": "maroc",
+        "answer": "a"
+    },
+    {
+        "flag": "🇹🇲",
+        "a": "Kazakhstan",
+        "b": "Turkmenistan",
+        "c": "kazakhstan",
+        "d": "Pakistan",
+        "answer": "b"
+    },
+    {
+        "flag": "🇲🇨",
+        "a": "haiti",
+        "b": "Malta",
+        "c": "Monaco",
+        "d": "poland",
+        "answer": "c"
+    },
+    {
+        "flag": "🇧🇼",
+        "a": "Comoros",
+        "b": "Guadeloupe",
+        "c": "Micronesia",
+        "d": "Botswana",
+        "answer": "d"
+    },
+    {
+        "flag": "🇨🇬",
+        "a": "Congo",
+        "b": "Central African Republic",
+        "c": "Ghana",
+        "d": "Botswana",
+        "answer": "a"
     }
 ]

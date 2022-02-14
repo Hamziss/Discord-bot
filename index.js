@@ -46,16 +46,21 @@ async function accesSpreadsheet() {
 
     //here i started working on the bot
     client.on('messageCreate', message => {
-        if (message.content === '!rachid quiz') {
+
+        if (message.content.includes('-quiz')) {
             message.channel.send(`${data[question_nbr].flag}`)
+
+
             message.channel.send(`what flag is this ?
 a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c}\t\t d-${data[question_nbr].d}`)
 
-            if (message.content === "b") {
-                message.channel.send(`you have the correct answer`)
-            }
+        }
+
+        if (message.content === data[question_nbr].answer) {
+            message.reply("CHIKOUUUUR !!!! 😯😯😯")
             question_nbr = Math.floor(Math.random() * 3);
         }
+
 
         //cmd to resume all commands
         if (message.content === '!rachid cmd') {
