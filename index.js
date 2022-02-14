@@ -2,8 +2,8 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { Client, Intents } = require('discord.js');
 require("dotenv").config();
 const data = require('./data.json');
-var question_nbr = Math.floor(Math.random() * 10);
-
+var question_nbr = Math.floor(Math.random() * 9);
+var points = 0
 
 const client = new Client({
     intents: [
@@ -58,8 +58,10 @@ a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c
 
         if (message.content === data[question_nbr].answer) {
             message.reply("CHIKOUUUUR !!!! 😯😯😯")
-            question_nbr = Math.floor(Math.random() * 10);
+            question_nbr = Math.floor(Math.random() * 9);
+            points++
         }
+        if (message.content === "-quiz points") { message.reply(points) }
 
 
         //cmd to resume all commands
