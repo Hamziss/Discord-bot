@@ -61,7 +61,7 @@ a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c
             question_nbr = Math.floor(Math.random() * 9);
             points++
         }
-        if (message.content === "-quiz points") { message.reply(points) }
+        if (message.content === "-points") { message.reply(points) }
 
 
         //cmd to resume all commands
