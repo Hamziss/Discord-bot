@@ -7,7 +7,7 @@
 ## He uses data from a google sheet doc of all members:
 
   <div align="center">
-  <img src="https://i.ibb.co/jr0ttcF/chrome-sbt-T1gejc-C.png" />
+  <img src="https://camo.githubusercontent.com/cc1ad253f9cc697024caffd0c5079f0ab099cac44b3117a988274bec0217ccae/68747470733a2f2f692e6962622e636f2f6a7230747463462f6368726f6d652d7362742d543167656a632d432e706e67" />
 </div>
 
 
