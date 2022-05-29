@@ -59,7 +59,12 @@ a-${data[question_nbr].a}\t b-${data[question_nbr].b}\t c-${data[question_nbr].c
         if (message.content === data[question_nbr].answer) {
             message.reply("CHIKOUUUUR !!!! 😯😯😯")
             question_nbr = Math.floor(Math.random() * 9);
+        } else {
+
+
         }
+
+
 
 
         //cmd to resume all commands
